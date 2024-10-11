@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.59364' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 32768 B, 64 B, 8-way associative
+D1 cache: 49152 B, 64 B, 12-way associative
+LL cache: 18874368 B, 64 B, 18-way associative
+Timerange: Basic block 0 - 37056
+Trigger: Program termination
+Profiled target:  ./memoire (PID 59364, part 1)
+Events recorded:  Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+Events shown:     Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+Event sort order: Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw
+Thresholds:       99 0 0 0 0 0 0 0 0
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               Dr              Dw              I1mr           D1mr         D1mw         ILmr           DLmr         DLmw         
+--------------------------------------------------------------------------------
+167,889 (100.0%) 37,432 (100.0%) 15,153 (100.0%) 1,326 (100.0%) 986 (100.0%) 594 (100.0%) 1,306 (100.0%) 835 (100.0%) 567 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir               Dr              Dw              I1mr           D1mr         D1mw         ILmr           DLmr         DLmw          file:function
+--------------------------------------------------------------------------------
+167,889 (100.0%) 37,432 (100.0%) 15,153 (100.0%) 1,326 (100.0%) 986 (100.0%) 594 (100.0%) 1,306 (100.0%) 835 (100.0%) 567 (100.0%)  ???:0x000000000001f540 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+153,971 (91.71%) 34,374 (91.83%) 12,852 (84.81%)   974 (73.45%) 917 (93.00%) 525 (88.38%)   969 (74.20%) 810 (97.01%) 516 (91.01%)  ./elf/./elf/rtld.c:_dl_start [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+153,298 (91.31%) 34,271 (91.56%) 12,777 (84.32%)   943 (71.12%) 904 (91.68%) 503 (84.68%)   939 (71.90%) 798 (95.57%) 494 (87.13%)  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_start [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+105,101 (62.60%) 26,153 (69.87%) 12,168 (80.30%)   813 (61.31%) 790 (80.12%) 482 (81.14%)   810 (62.02%) 685 (82.04%) 473 (83.42%)  ./elf/./elf/rtld.c:dl_main [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 79,478 (47.34%) 20,159 (53.85%)  8,836 (58.31%)   224 (16.89%) 526 (53.35%) 236 (39.73%)   224 (17.15%) 480 (57.49%) 230 (40.56%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 54,985 (32.75%) 16,074 (42.94%)  6,370 (42.04%)    68 ( 5.13%) 313 (31.74%)   8 ( 1.35%)    68 ( 5.21%) 304 (36.41%)   8 ( 1.41%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 40,243 (23.97%)  7,152 (19.11%)      6 ( 0.04%)     7 ( 0.53%)  77 ( 7.81%)   0              7 ( 0.54%)  77 ( 9.22%)   .           ./elf/./elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 35,886 (21.37%) 11,855 (31.67%)  4,069 (26.85%)    55 ( 4.15%) 212 (21.50%)   5 ( 0.84%)    55 ( 4.21%) 204 (24.43%)   5 ( 0.88%)  ./elf/./elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+ 13,498 ( 8.04%)  2,933 ( 7.84%)  2,243 (14.80%)   325 (24.51%)  58 ( 5.88%)  63 (10.61%)   311 (23.81%)  24 ( 2.87%)  49 ( 8.64%)  ???:(below main) [/home/iut45/Etudiants/o22202319/Documents/qualiteAlgo/tp3/memoire]
+ 13,486 ( 8.03%)  2,931 ( 7.83%)  2,240 (14.78%)   324 (24.43%)  58 ( 5.88%)  63 (10.61%)   310 (23.74%)  24 ( 2.87%)  49 ( 8.64%)  ./csu/../csu/libc-start.c:__libc_start_main@@GLIBC_2.34 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 13,316 ( 7.93%)  2,890 ( 7.72%)  2,205 (14.55%)   306 (23.08%)  53 ( 5.38%)  62 (10.44%)   292 (22.36%)  23 ( 2.75%)  49 ( 8.64%)  ./csu/../sysdeps/nptl/libc_start_call_main.h:(below main) [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 11,697 ( 6.97%)  2,445 ( 6.53%)  1,883 (12.43%)   196 (14.78%)  37 ( 3.75%)  60 (10.10%)   196 (15.01%)  19 ( 2.28%)  48 ( 8.47%)  /home/iut45/Etudiants/o22202319/Documents/qualiteAlgo/tp3/memoire.c:main
+ 11,697 ( 6.97%)  2,445 ( 6.53%)  1,883 (12.43%)   196 (14.78%)  37 ( 3.75%)  60 (10.10%)   196 (15.01%)  19 ( 2.28%)  48 ( 8.47%)  memoire.c:main [/home/iut45/Etudiants/o22202319/Documents/qualiteAlgo/tp3/memoire]
+ 10,042 ( 5.98%)  2,767 ( 7.39%)    692 ( 4.57%)    39 ( 2.94%)  56 ( 5.68%)   1 ( 0.17%)    39 ( 2.99%)  49 ( 5.87%)   1 ( 0.18%)  ./elf/./elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  9,452 ( 5.63%)  1,560 ( 4.17%)      0              2 ( 0.15%)  99 (10.04%)   0              2 ( 0.15%)  99 (11.86%)   .           ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x
+  8,510 ( 5.07%)  1,727 ( 4.61%)  1,096 ( 7.23%)   190 (14.33%)  83 ( 8.42%) 110 (18.52%)   187 (14.32%)  83 ( 9.94%) 110 (19.40%)  ./elf/./elf/dl-catch.c:_dl_catch_exception [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  8,249 ( 4.91%)  1,658 ( 4.43%)  1,015 ( 6.70%)   182 (13.73%)  82 ( 8.32%) 104 (17.51%)   179 (13.71%)  82 ( 9.82%) 104 (18.34%)  ./elf/./elf/dl-load.c:_dl_map_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  7,395 ( 4.40%)  1,470 ( 3.93%)  1,000 ( 6.60%)   135 (10.18%)  51 ( 5.17%)  84 (14.14%)   134 (10.26%)  51 ( 6.11%)  84 (14.81%)  ./elf/./elf/dl-deps.c:_dl_map_object_deps [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  7,350 ( 4.38%)    809 ( 2.16%)    486 ( 3.21%)   104 ( 7.84%)  19 ( 1.93%)   8 ( 1.35%)   104 ( 7.96%)  19 ( 2.28%)   8 ( 1.41%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_sysdep_start
+  7,349 ( 4.38%)    809 ( 2.16%)    485 ( 3.20%)   104 ( 7.84%)  19 ( 1.93%)   8 ( 1.35%)   104 ( 7.96%)  19 ( 2.28%)   8 ( 1.41%)  ./elf/../sysdeps/x86/dl-get-cpu-features.c:_dl_x86_init_cpu_features [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  7,344 ( 4.37%)    808 ( 2.16%)    485 ( 3.20%)   103 ( 7.77%)  19 ( 1.93%)   8 ( 1.35%)   103 ( 7.89%)  19 ( 2.28%)   8 ( 1.41%)  ./elf/../sysdeps/x86/cpu-features.c:init_cpu_features.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  7,300 ( 4.35%)  1,612 ( 4.31%)  1,220 ( 8.05%)    69 ( 5.20%)   4 ( 0.41%)   6 ( 1.01%)    69 ( 5.28%)   4 ( 0.48%)   1 ( 0.18%)  ???:0x00000000001090a0 [???]
+  7,284 ( 4.34%)  1,604 ( 4.29%)  1,220 ( 8.05%)    69 ( 5.20%)   4 ( 0.41%)   6 ( 1.01%)    69 ( 5.28%)   4 ( 0.48%)   1 ( 0.18%)  ./stdio-common/./stdio-common/printf.c:printf [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  7,028 ( 4.19%)  1,548 ( 4.14%)  1,124 ( 7.42%)    65 ( 4.90%)   4 ( 0.41%)   6 ( 1.01%)    65 ( 4.98%)   4 ( 0.48%)   1 ( 0.18%)  ./stdio-common/./stdio-common/vfprintf-internal.c:__vfprintf_internal [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  6,759 ( 4.03%)    718 ( 1.92%)    371 ( 2.45%)    55 ( 4.15%)  11 ( 1.12%)   2 ( 0.34%)    55 ( 4.21%)  11 ( 1.32%)   2 ( 0.35%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:init_cpu_features.constprop.0
+  6,093 ( 3.63%)  1,278 ( 3.41%)      0             49 ( 3.70%)  41 ( 4.16%)   0             49 ( 3.75%)  38 ( 4.55%)   .           ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  5,880 ( 3.50%)    588 ( 1.57%)    228 ( 1.50%)    14 ( 1.06%)   6 ( 0.61%)   0             14 ( 1.07%)   6 ( 0.72%)   .           ./elf/../sysdeps/x86/dl-cacheinfo.h:handle_intel.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  5,748 ( 3.42%)  1,889 ( 5.05%)    605 ( 3.99%)    15 ( 1.13%) 109 (11.05%)   0             15 ( 1.15%)  99 (11.86%)   .           ./elf/./elf/do-rel.h:_dl_relocate_object
+  5,650 ( 3.37%)  1,117 ( 2.98%)    730 ( 4.82%)    86 ( 6.49%)  48 ( 4.87%)  71 (11.95%)    85 ( 6.51%)  48 ( 5.75%)  71 (12.52%)  ./elf/./elf/dl-deps.c:openaux [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  5,364 ( 3.19%)    492 ( 1.31%)     96 ( 0.63%)    11 ( 0.83%)   6 ( 0.61%)   0             11 ( 0.84%)   6 ( 0.72%)   .           ./elf/../sysdeps/x86/dl-cacheinfo.h:intel_check_word.constprop.0 [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  4,873 ( 2.90%)  1,182 ( 3.16%)    262 ( 1.73%)   113 ( 8.52%)  10 ( 1.01%)  33 ( 5.56%)   113 ( 8.65%)   7 ( 0.84%)  27 ( 4.76%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+  4,833 ( 2.88%)    917 ( 2.45%)    746 ( 4.92%)   104 ( 7.84%)  29 ( 2.94%)  49 ( 8.25%)   104 ( 7.96%)  13 ( 1.56%)  45 ( 7.94%)  ./libio/./libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  4,314 ( 2.57%)    837 ( 2.24%)    599 ( 3.95%)    82 ( 6.18%)  63 ( 6.39%)  83 (13.97%)    80 ( 6.13%)  63 ( 7.54%)  83 (14.64%)  ./elf/./elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,972 ( 2.37%)    820 ( 2.19%)    652 ( 4.30%)    46 ( 3.47%)   4 ( 0.41%)   6 ( 1.01%)    46 ( 3.52%)   4 ( 0.48%)   1 ( 0.18%)  ./stdio-common/./stdio-common/vfprintf-internal.c:__printf_buffer [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  3,968 ( 2.36%)    746 ( 1.99%)    662 ( 4.37%)    90 ( 6.79%)  29 ( 2.94%)  47 ( 7.91%)    90 ( 6.89%)  13 ( 1.56%)  45 ( 7.94%)  ./libio/./libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  3,801 ( 2.26%)  1,142 ( 3.05%)    356 ( 2.35%)    38 ( 2.87%)  36 ( 3.65%)  23 ( 3.87%)    38 ( 2.91%)  36 ( 4.31%)  23 ( 4.06%)  ./elf/./elf/dl-catch.c:_dl_receive_error [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,779 ( 2.25%)  1,134 ( 3.03%)    348 ( 2.30%)    36 ( 2.71%)  36 ( 3.65%)  23 ( 3.87%)    36 ( 2.76%)  36 ( 4.31%)  23 ( 4.06%)  ./elf/./elf/rtld.c:version_check_doit [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,764 ( 2.24%)  1,129 ( 3.02%)    345 ( 2.28%)    34 ( 2.56%)  36 ( 3.65%)  23 ( 3.87%)    34 ( 2.60%)  36 ( 4.31%)  23 ( 4.06%)  ./elf/./elf/dl-version.c:_dl_check_all_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,692 ( 2.20%)  1,115 ( 2.98%)    336 ( 2.22%)    32 ( 2.41%)  36 ( 3.65%)  23 ( 3.87%)    32 ( 2.45%)  36 ( 4.31%)  23 ( 4.06%)  ./elf/./elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,550 ( 2.11%)    793 ( 2.12%)    436 ( 2.88%)    79 ( 5.96%)   5 ( 0.51%)  17 ( 2.86%)    79 ( 6.05%)   5 ( 0.60%)  17 ( 3.00%)  ./elf/./dl-main.h:dl_main
+  3,545 ( 2.11%)    789 ( 2.11%)    435 ( 2.87%)    78 ( 5.88%)   5 ( 0.51%)  17 ( 2.86%)    78 ( 5.97%)   5 ( 0.60%)  17 ( 3.00%)  ./elf/./elf/dl-load.c:_dl_init_paths [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  3,488 ( 2.08%)    629 ( 1.68%)    561 ( 3.70%)   113 ( 8.52%)  33 ( 3.35%)  50 ( 8.42%)   113 ( 8.65%)  15 ( 1.80%)  45 ( 7.94%)  ???:0x0000000000109080 [???]
+  3,484 ( 2.08%)    627 ( 1.68%)    561 ( 3.70%)   112 ( 8.45%)  33 ( 3.35%)  50 ( 8.42%)   112 ( 8.58%)  15 ( 1.80%)  45 ( 7.94%)  ./libio/./libio/ioputs.c:puts [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  3,084 ( 1.84%)    721 ( 1.93%)    370 ( 2.44%)   117 ( 8.82%)  37 ( 3.75%)  43 ( 7.24%)   115 ( 8.81%)  37 ( 4.43%)  43 ( 7.58%)  ./elf/./elf/rtld.c:handle_preload_list [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,825 ( 1.68%)    799 ( 2.13%)      0              1 ( 0.08%)   1 ( 0.10%)   0              1 ( 0.08%)   1 ( 0.12%)   .           ./elf/./elf/dl-tunables.h:__GI___tunables_init
+  2,754 ( 1.64%)    588 ( 1.57%)    328 ( 2.16%)   106 ( 7.99%)  35 ( 3.55%)  36 ( 6.06%)   104 ( 7.96%)  35 ( 4.19%)  36 ( 6.35%)  ./elf/./elf/dl-catch.c:_dl_catch_error [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,662 ( 1.59%)    565 ( 1.51%)    297 ( 1.96%)    98 ( 7.39%)  34 ( 3.45%)  34 ( 5.72%)    96 ( 7.35%)  34 ( 4.07%)  34 ( 6.00%)  ./elf/./elf/rtld.c:map_doit [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,479 ( 1.48%)    699 ( 1.87%)    314 ( 2.07%)    10 ( 0.75%)   5 ( 0.51%)   0             10 ( 0.77%)   5 ( 0.60%)   .           ./elf/./elf/dl-minimal.c:__rtld_malloc_init_real [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,464 ( 1.47%)    592 ( 1.58%)    336 ( 2.22%)     9 ( 0.68%)   0            0              9 ( 0.69%)   .            .           ./stdio-common/./stdio-common/printf_buffer_to_file.c:__printf_buffer_to_file_done [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  2,368 ( 1.41%)    686 ( 1.83%)    296 ( 1.95%)     6 ( 0.45%)   4 ( 0.41%)   0              6 ( 0.46%)   4 ( 0.48%)   .           ./elf/./elf/dl-minimal.c:lookup_malloc_symbol [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  2,368 ( 1.41%)    311 ( 0.83%)    371 ( 2.45%)    62 ( 4.68%)  26 ( 2.64%)  47 ( 7.91%)    62 ( 4.75%)  13 ( 1.56%)  47 ( 8.29%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  2,268 ( 1.35%)      0               0              1 ( 0.08%)   0            0              1 ( 0.08%)   .            .           ./elf/../bits/stdlib-bsearch.h:intel_check_word.constprop.0
+  2,052 ( 1.22%)    396 ( 1.06%)    276 ( 1.82%)    25 ( 1.89%)   1 ( 0.10%)   1 ( 0.17%)    25 ( 1.91%)   1 ( 0.12%)   .           ./stdio-common/./stdio-common/vfprintf-process-arg.c:__printf_buffer
+  1,943 ( 1.16%)    231 ( 0.62%)    339 ( 2.24%)    72 ( 5.43%)  29 ( 2.94%)  47 ( 7.91%)    72 ( 5.51%)  13 ( 1.56%)  45 ( 7.94%)  ./libio/./libio/genops.c:_IO_doallocbuf [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,914 ( 1.14%)    222 ( 0.59%)    334 ( 2.20%)    69 ( 5.20%)  28 ( 2.84%)  46 ( 7.74%)    69 ( 5.28%)  13 ( 1.56%)  45 ( 7.94%)  ./libio/./libio/filedoalloc.c:_IO_file_doallocate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  1,812 ( 1.08%)    198 ( 0.53%)    317 ( 2.09%)    60 ( 4.52%)  26 ( 2.64%)  45 ( 7.58%)    60 ( 4.59%)  13 ( 1.56%)  45 ( 7.94%)  ???:0x00000000048883f0 [???]
+  1,553 ( 0.93%)    429 ( 1.15%)    300 ( 1.98%)   103 ( 7.77%)  13 ( 1.32%)   2 ( 0.34%)    89 ( 6.81%)   4 ( 0.48%)   1 ( 0.18%)  ./stdlib/./stdlib/exit.c:exit [/usr/lib/x86_64-linux-gnu/libc.so.6]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: memoire.c
+--------------------------------------------------------------------------------
+Ir          Dr          Dw         I1mr       D1mr       D1mw       ILmr       DLmr DLmw 
+
+ .           .          .          .          .          .          .          .          .           #include <stdio.h>
+ .           .          .          .          .          .          .          .          .           #include <stdlib.h>
+ .           .          .          .          .          .          .          .          .           
+12 ( 0.01%)  1 ( 0.00%) 5 ( 0.03%) 1 ( 0.08%) 0          1 ( 0.17%) 1 ( 0.08%) .          .           void main(){
+ 2 ( 0.00%)  0          2 ( 0.01%) .          .          .          .          .          .               int n = 2, m=2;
+71 ( 0.04%)  2 ( 0.01%) 4 ( 0.03%) 4 ( 0.30%) 0          1 ( 0.17%) 4 ( 0.31%) .          .               int tab[n][m];
+ .           .          .          .          .          .          .          .          .           
+ 3 ( 0.00%)  0          1 ( 0.01%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .               printf("# tab V1\n\n");
+2,995 ( 1.78%) 503 ( 1.34%) 489 ( 3.23%) 112 ( 8.45%) 33 ( 3.35%) 50 ( 8.42%) 112 ( 8.58%) 15 ( 1.80%) 45 ( 7.94%)  => ???:0x0000000000109080 (1x)
+13 ( 0.01%)  6 ( 0.02%) 3 ( 0.02%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .               for(int i=0;i<n;i++){
+26 ( 0.02%) 12 ( 0.03%) 6 ( 0.04%) .          .          .          .          .          .                   for(int j=0;j<m;j++)
+64 ( 0.04%) 12 ( 0.03%) 4 ( 0.03%) .          .          .          .          .          .                       printf("%p\n", &tab[i][j]);
+3,700 ( 2.20%) 812 ( 2.17%) 616 ( 4.07%) 69 ( 5.20%) 4 ( 0.41%) 6 ( 1.01%) 69 ( 5.28%) 4 ( 0.48%) 1 ( 0.18%)  => ???:0x00000000001090a0 (4x)
+ .           .          .          .          .          .          .          .          .                   }
+ .           .          .          .          .          .          .          .          .           
+ 6 ( 0.00%)  1 ( 0.00%) 2 ( 0.01%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .                   int **tab2 = malloc(sizeof(int *)*n);
+192 ( 0.11%) 39 ( 0.10%) 18 ( 0.12%) 2 ( 0.15%) 0          1 ( 0.17%) 2 ( 0.15%) 0          1 ( 0.18%)  => ???:0x00000000001090b0 (1x)
+13 ( 0.01%)  6 ( 0.02%) 3 ( 0.02%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .                   for(int i=0;i<n;i++){
+22 ( 0.01%)  6 ( 0.02%) 4 ( 0.03%) .          .          .          .          .          .                       tab2[i] = malloc(sizeof(int)*m);
+372 ( 0.22%) 78 ( 0.21%) 36 ( 0.24%) 1 ( 0.08%) 0          1 ( 0.17%) 1 ( 0.08%) 0          1 ( 0.18%)  => ???:0x00000000001090b0 (2x)
+ .           .          .          .          .          .          .          .          .                   }
+ 3 ( 0.00%)  0          1 ( 0.01%) .          .          .          .          .          .                   printf("\n# tab V2\n\n");
+493 ( 0.29%) 126 ( 0.34%) 72 ( 0.48%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .           => ???:0x0000000000109080 (1x)
+14 ( 0.01%)  6 ( 0.02%) 3 ( 0.02%) 1 ( 0.08%) 0          0          1 ( 0.08%) .          .                   for(int i=0;i<n;i++){
+26 ( 0.02%) 12 ( 0.03%) 6 ( 0.04%) .          .          .          .          .          .                       for(int j=0;j<m;j++)
+60 ( 0.04%) 16 ( 0.04%) 4 ( 0.03%) .          .          .          .          .          .                           printf("%p\n",&tab2[i][j]);
+3,600 ( 2.14%) 800 ( 2.14%) 604 ( 3.99%) .          .          .          .          .          .           => ???:0x00000000001090a0 (4x)
+ .           .          .          .          .          .          .          .          .               }
+10 ( 0.01%)  7 ( 0.02%) 0          1 ( 0.08%) 0          0          1 ( 0.08%) .          .           }
+ .           .          .          .          .          .          .          .          .           
+ .           .          .          .          .          .          .          .          .           float moyenne_v1(int **mat, int n) {
+ .           .          .          .          .          .          .          .          .               int i, j, total = 0;
+ .           .          .          .          .          .          .          .          .               for (i = 0; i < n; i++) {
+ .           .          .          .          .          .          .          .          .                   for (j = 0; j < n; j++) {
+ .           .          .          .          .          .          .          .          .                       total += mat[i][j];
+ .           .          .          .          .          .          .          .          .                   }
+ .           .          .          .          .          .          .          .          .               }
+-- line 31 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /home/iut45/Etudiants/o22202319/Documents/qualiteAlgo/tp3/memoire.c
+--------------------------------------------------------------------------------
+  No information has been collected for /home/iut45/Etudiants/o22202319/Documents/qualiteAlgo/tp3/memoire.c
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./csu/../csu/libc-start.c
+  ./csu/../sysdeps/nptl/libc_start_call_main.h
+  ./elf/../bits/stdlib-bsearch.h
+  ./elf/../sysdeps/generic/dl-new-hash.h
+  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  ./elf/../sysdeps/x86/cpu-features.c
+  ./elf/../sysdeps/x86/dl-cacheinfo.h
+  ./elf/../sysdeps/x86/dl-get-cpu-features.c
+  ./elf/../sysdeps/x86_64/dl-machine.h
+  ./elf/./dl-main.h
+  ./elf/./elf/dl-catch.c
+  ./elf/./elf/dl-deps.c
+  ./elf/./elf/dl-load.c
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/dl-minimal.c
+  ./elf/./elf/dl-reloc.c
+  ./elf/./elf/dl-tunables.c
+  ./elf/./elf/dl-tunables.h
+  ./elf/./elf/dl-version.c
+  ./elf/./elf/do-rel.h
+  ./elf/./elf/rtld.c
+  ./libio/./libio/filedoalloc.c
+  ./libio/./libio/fileops.c
+  ./libio/./libio/genops.c
+  ./libio/./libio/ioputs.c
+  ./malloc/./malloc/malloc.c
+  ./stdio-common/./stdio-common/printf.c
+  ./stdio-common/./stdio-common/printf_buffer_to_file.c
+  ./stdio-common/./stdio-common/vfprintf-internal.c
+  ./stdio-common/./stdio-common/vfprintf-process-arg.c
+  ./stdlib/./stdlib/exit.c
+  ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+
+--------------------------------------------------------------------------------
+Ir           Dr          Dw          I1mr        D1mr       D1mw       ILmr        DLmr DLmw 
+--------------------------------------------------------------------------------
+345 ( 0.21%) 87 ( 0.23%) 48 ( 0.32%) 11 ( 0.83%) 0          2 ( 0.34%) 11 ( 0.84%) .          .           events annotated
+
